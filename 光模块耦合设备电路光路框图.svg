@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2950 1450" width="100%" height="100%" style="background-color: #f8fafc; font-family: system-ui, -apple-system, sans-serif;">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow-opt" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0284c7"/>
+    </marker>
+    <marker id="arrow-pwr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-sig" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#ea580c"/>
+    </marker>
+    <marker id="arrow-trig" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#9333ea"/>
+    </marker>
+    <g id="i-zap" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+    </g>
+    <g id="i-cpu" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4" y="4" width="16" height="16" rx="2"/>
+      <path d="M9 9h6v6H9z M9 2v2 M15 2v2 M9 20v2 M15 20v2 M2 9h2 M20 9h2 M2 15h2 M20 15h2"/>
+    </g>
+    <g id="i-pogo" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2v6 M9 8h6v8H9z M12 16v6"/>
+    </g>
+    <g id="i-diode-out" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 12h14 M12 5v14 M18 4l4 4 M18 8l4 4 M22 4v4 M18 4h4"/>
+    </g>
+    <g id="i-diode-in" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 12l8-5v10z M18 5v14 M2 4l4 4 M2 8l4 4 M2 4v4 M2 4h4"/>
+    </g>
+    <g id="i-snow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2v20 M2 12h20 M4.9 4.9l14.2 14.2 M4.9 19.1l14.2-14.2"/>
+    </g>
+    <g id="i-lens" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2c3 4 3 16 0 20-3-4-3-16 0-20z"/>
+      <path d="M2 12h20" stroke-dasharray="2 3"/>
+    </g>
+    <g id="i-iso" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4" y="8" width="16" height="8"/>
+      <path d="M8 10l5 2-5 2z"/>
+    </g>
+    <g id="i-mpo" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="6" width="20" height="12" rx="2"/>
+      <circle cx="6" cy="12" r="1.5"/>
+      <circle cx="10" cy="12" r="1.5"/>
+      <circle cx="14" cy="12" r="1.5"/>
+      <circle cx="18" cy="12" r="1.5"/>
+    </g>
+    <g id="i-amp" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 4v16l16-8z"/>
+      <path d="M6 10h4 M8 8v4 M6 14h4"/>
+    </g>
+    <g id="i-mirror" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 20L20 4 M4 10v6h6"/>
+      <path d="M3 21l3-3 M8 16l3-3 M13 11l3-3 M18 6l3-3" stroke-width="1.5"/>
+    </g>
+    <g id="i-wfs" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="2"/>
+      <path d="M9 3v18 M15 3v18 M3 9h18 M3 15h18"/>
+    </g>
+    <g id="i-fiber" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 18 C8 6 16 6 22 18 M2 14 C8 2 16 2 22 14"/>
+    </g>
+    <g id="i-opm" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="6" width="20" height="14" rx="2"/>
+      <path d="M12 16L16 10 M8 12h.01 M16 12h.01 M12 6v-2 M8 4h8"/>
+    </g>
+    <g id="i-voa" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 12h16 M12 6v12 M18 6L6 18 M15 15l3 3 M18 15v3h-3"/>
+    </g>
+    <g id="i-src" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"/>
+      <path d="M12 2v3 M12 19v3 M2 12h3 M19 12h3 M4.9 4.9l2.1 2.1 M17 17l2.1 2.1 M4.9 19.1l2.1-2.1 M17 7l2.1-2.1"/>
+    </g>
+    <g id="i-lia" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="5" width="20" height="14" rx="2"/>
+      <path d="M6 12c1.5-3 2.5-3 4 0s2.5 3 4 0s2.5-3 4 0"/>
+    </g>
+    <g id="i-axis" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 20V4 M12 4l-3 3 M12 4l3 3 M4 12h16 M20 12l-3-3 M20 12l-3 3 M6 18l12-12 M18 6l-3 0 M18 6l0 3"/>
+    </g>
+    <g id="i-trig" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 16h4v-8h10v8h4"/>
+    </g>
+    <g id="i-adc" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 16h5v-4h5v-4h5V4h5"/>
+    </g>
+    <g id="i-pc" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="4" width="20" height="12" rx="2"/>
+      <path d="M8 20h8 M12 16v4 M6 20h12"/>
+    </g>
+  </defs>
+  <style>
+        .box-title { font-size: 18px; font-weight: 800; }
+        .node { fill: #ffffff; stroke: #94a3b8; stroke-width: 2; }
+        .node-cn { font-size: 14px; font-weight: 800; fill: #0f172a; text-anchor: middle; }
+        .node-en { font-size: 12px; font-weight: 600; fill: #475569; text-anchor: middle; }
+        
+        .path-opt { fill: none; stroke: #0284c7; stroke-width: 4; stroke-linejoin: round; }
+        .path-pwr { fill: none; stroke: #dc2626; stroke-width: 3; stroke-linejoin: round; }
+        .path-sig { fill: none; stroke: #ea580c; stroke-width: 3; stroke-dasharray: 8,6; stroke-linejoin: round; }
+        .path-trig { fill: none; stroke: #9333ea; stroke-width: 3; stroke-dasharray: 4,4; stroke-linejoin: round; }
+        
+        .legend-title { font-size: 16px; font-weight: bold; fill: #0f172a; }
+        .legend-text { font-size: 13px; fill: #334155; }
+    </style>
+  <rect x="480" y="188.484" width="1514.18" height="647.637" rx="16" fill="#f0fdf4" stroke="#86efac" stroke-width="2" stroke-dasharray="8,6" style=""/>
+  <text x="510" y="220" class="box-title" fill="#15803d" style="white-space: pre;">一、光模块被测器件 (DUT)</text>
+  <rect x="480.848" y="863.575" width="520" height="160" rx="16" fill="#fef2f2" stroke="#fca5a5" stroke-width="2" stroke-dasharray="8,6"/>
+  <text x="510" y="894" class="box-title" fill="#b91c1c" style="white-space: pre; font-size: 18px;">三、供电与外部通信 (ELEC-DUT)</text>
+  <rect x="2126.77" y="192.54" width="436.729" height="134.242" rx="16" fill="#ecfeff" stroke="#67e8f9" stroke-width="2" stroke-dasharray="8,6" style=""/>
+  <text x="2138.1" y="217.933" class="box-title" fill="#0369a1" style="white-space: pre; font-size: 18px;">二、Tx 波前检测仪器（候选方案）</text>
+  <rect x="2128.83" y="340" width="434.669" height="160" rx="16" fill="#ecfeff" stroke="#67e8f9" stroke-width="2" stroke-dasharray="8,6" style=""/>
+  <text x="2146.85" y="380" class="box-title" fill="#0369a1" style="white-space: pre; font-size: 18px;">二、Tx 功率采集光路</text>
+  <rect x="2131" y="640" width="432.499" height="300" rx="16" fill="#ecfeff" stroke="#67e8f9" stroke-width="2" stroke-dasharray="8,6" style=""/>
+  <text x="2146.85" y="680" class="box-title" fill="#0369a1" style="white-space: pre; font-size: 18px;">二、Rx 端输入光路 (OPT-Rx)</text>
+  <rect x="1411.94" y="1040" width="1150" height="160" rx="16" fill="#faf5ff" stroke="#d8b4fe" stroke-width="2" stroke-dasharray="8,6"/>
+  <text x="1492" y="1080" class="box-title" fill="#6d28d9" style="white-space: pre; font-size: 18px;">四、运控系统与高速采集 (MOT &amp; ELEC-Tx)</text>
+  <path class="path-pwr" marker-end="url(#arrow-pwr)" d="M 590 900 L 590 845"/>
+  <path class="path-pwr" marker-end="url(#arrow-pwr)" d="M 590 755 L 590 580"/>
+  <path class="path-sig" marker-end="url(#arrow-sig)" d="M 830 900 L 830 845"/>
+  <path class="path-sig" d="M 830 755 L 830 630"/>
+  <path class="path-sig" marker-end="url(#arrow-sig)" d="M 830 630 L 830 606.755 L 1023.08 606.755" style=""/>
+  <path class="path-sig" marker-end="url(#arrow-sig)" d="M 830 607.486 L 669.152 609.486 L 670 569"/>
+  <path class="path-sig" marker-end="url(#arrow-sig)" d="M 630 490 L 630 435 L 850 435"/>
+  <path class="path-sig" marker-end="url(#arrow-sig)" d="M 1430.603 684.093 L 1430.615 536.463 L 1272.804 538.303 L 714.245 540" style=""/>
+  <path class="path-sig" marker-end="url(#arrow-sig)" d="M 2294.8 873.747 L 2348.26 872.269" style=""/>
+  <path class="path-sig" marker-end="url(#arrow-sig)" d="M 2356.12 426.516 L 2585.1 426.516 L 2585.1 1212.73 L 2182.84 1212.73 L 2182.84 1192.17" style=""/>
+  <path class="path-sig" marker-end="url(#arrow-sig)" d="M 2262 1135 L 2402 1135"/>
+  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 930 400 L 930 330"/>
+  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 1010 435 L 1100 435"/>
+  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 1260 435 L 1350 435"/>
+  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 1510 435 L 1600 435"/>
+  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 1760 435 L 1850 435"/>
+  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 2010 435 L 2100 435"/>
+  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 2260 435 L 2350 435"/>
+  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 1680 390 L 2103.376 250.421"/>
+  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 2264.83 270.933 L 2354.83 270.933"/>
+  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 2431.007 830.329 L 2431.09 781.968" style=""/>
+  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 2350 735 L 2260 735"/>
+  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 2100 735 L 2010 735"/>
+  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 1850 735 L 1760 735"/>
+  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 1600 735 L 1510 735"/>
+  <path class="path-trig" marker-end="url(#arrow-trig)" d="M 1662 1135 L 1802 1135"/>
+  <path class="path-trig" marker-end="url(#arrow-trig)" d="M 1962 1135 L 2102 1135"/>
+  <g transform="matrix(1, 0, 0, 1, 510.000015, 909.000027)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#dc2626">
+      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">高精度程控电源</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">ELEC-DUT-PSU</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 750.000022, 909.000027)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#ea580c">
+      <rect x="4" y="4" width="16" height="16" rx="2"/>
+      <path d="M9 9h6v6H9z M9 2v2 M15 2v2 M9 20v2 M15 20v2 M2 9h2 M20 9h2 M2 15h2 M20 15h2"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">DUT通信链路(I2C)</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">ELEC-DUT-COM</text>
+  </g>
+  <g transform="translate(510, 755)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)" stroke="#f87171" stroke-width="3"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#dc2626">
+      <path d="M12 2v6 M9 8h6v8H9z M12 16v6"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">供电专用顶针触点</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">PIN (Pwr)</text>
+  </g>
+  <g transform="translate(750, 755)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)" stroke="#f87171" stroke-width="3"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#ea580c">
+      <path d="M12 2v6 M9 8h6v8H9z M12 16v6"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">通信专用顶针触点</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">PIN (Com)</text>
+  </g>
+  <g transform="translate(480, 670)">
+    <rect width="460" height="40" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-dasharray="4,4" stroke-width="2"/>
+    <text x="230" y="25" class="node-cn" fill="#64748b" style="white-space: pre;">光模块电口电气界面 (DUT-C-ELEC)</text>
+  </g>
+  <g transform="translate(550, 490)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)" stroke="#15803d" stroke-width="3"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#15803d">
+      <rect x="4" y="4" width="16" height="16" rx="2"/>
+      <path d="M9 9h6v6H9z M9 2v2 M15 2v2 M9 20v2 M15 20v2 M2 9h2 M20 9h2 M2 15h2 M20 15h2"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">数字信号处理器</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">DUT-C-DSP</text>
+  </g>
+  <g transform="translate(850, 240)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#0284c7">
+      <path d="M10 12l8-5v10z M18 5v14 M2 4l4 4 M2 8l4 4 M2 4v4 M2 4h4"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">背光监控光电二极管</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">DUT-T-MPD</text>
+  </g>
+  <g transform="translate(850, 390)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)" stroke="#3b82f6" stroke-width="2"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#3b82f6">
+      <path d="M5 12h14 M12 5v14 M18 4l4 4 M18 8l4 4 M22 4v4 M18 4h4"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">激光器芯片</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">DUT-T-LD</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 1023.932098, 559.2101)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#0ea5e9">
+      <path d="M12 2v20 M2 12h20 M4.9 4.9l14.2 14.2 M4.9 19.1l14.2-14.2"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">内置热电制冷器</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">DUT-T-TEC</text>
+  </g>
+  <g transform="translate(1100, 390)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)" stroke="#0284c7" stroke-width="3"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#0284c7">
+      <path d="M12 2c3 4 3 16 0 20-3-4-3-16 0-20z"/>
+      <path d="M2 12h20" stroke-dasharray="2 3"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">Laser Lens (AA对象)</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">DUT-T-LL</text>
+  </g>
+  <g transform="translate(1350, 390)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#64748b">
+      <rect x="4" y="8" width="16" height="8"/>
+      <path d="M8 10l5 2-5 2z"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">隔离器</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">DUT-T-ISO</text>
+  </g>
+  <g transform="translate(1600, 390)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)" stroke="#0284c7" stroke-width="3"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#0284c7">
+      <path d="M12 2c3 4 3 16 0 20-3-4-3-16 0-20z"/>
+      <path d="M2 12h20" stroke-dasharray="2 3"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">Fiber Lens (AA对象)</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">DUT-T-FL</text>
+  </g>
+  <g transform="translate(1850, 390)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#0f172a">
+      <rect x="2" y="6" width="20" height="12" rx="2"/>
+      <circle cx="6" cy="12" r="1.5"/>
+      <circle cx="10" cy="12" r="1.5"/>
+      <circle cx="14" cy="12" r="1.5"/>
+      <circle cx="18" cy="12" r="1.5"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">Tx MPO输出接口</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">DUT-T-MPO</text>
+  </g>
+  <g transform="translate(1850, 690)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#0f172a">
+      <rect x="2" y="6" width="20" height="12" rx="2"/>
+      <circle cx="6" cy="12" r="1.5"/>
+      <circle cx="10" cy="12" r="1.5"/>
+      <circle cx="14" cy="12" r="1.5"/>
+      <circle cx="18" cy="12" r="1.5"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">Rx MPO输入接口</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">DUT-R-MPO</text>
+  </g>
+  <g transform="translate(1600, 690)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#0284c7">
+      <path d="M10 12l8-5v10z M18 5v14 M2 4l4 4 M2 8l4 4 M2 4v4 M2 4h4"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">光电探测器</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">DUT-R-PD</text>
+  </g>
+  <g transform="translate(1350, 690)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#15803d">
+      <path d="M4 4v16l16-8z"/>
+      <path d="M6 10h4 M8 8v4 M6 14h4"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">跨阻放大器</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">DUT-R-TIA</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 2098.888734, 226.236457)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#64748b">
+      <path d="M4 20L20 4 M4 10v6h6"/>
+      <path d="M3 21l3-3 M8 16l3-3 M13 11l3-3 M18 6l3-3" stroke-width="1.5"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">90度转镜</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">OPT-Tx-MIR</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 2350.00007, 227.933356)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#8b5cf6">
+      <rect x="3" y="3" width="18" height="18" rx="2"/>
+      <path d="M9 3v18 M15 3v18 M3 9h18 M3 15h18"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">波前传感器</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">OPT-Tx-WFS</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 2098.888734, 390.000012)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#0284c7">
+      <path d="M2 18 C8 6 16 6 22 18 M2 14 C8 2 16 2 22 14"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">Tx 测量光纤</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">OPT-Tx-FIB</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 2350.00007, 390.000012)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)" stroke="#0369a1" stroke-width="3"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#0369a1">
+      <rect x="2" y="6" width="20" height="14" rx="2"/>
+      <path d="M12 16L16 10 M8 12h.01 M16 12h.01 M12 6v-2 M8 4h8"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">高精度光功率计</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">OPT-Tx-OPM</text>
+  </g>
+  <g transform="translate(2100, 690)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#0284c7">
+      <path d="M2 18 C8 6 16 6 22 18 M2 14 C8 2 16 2 22 14"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">Rx 输入光纤</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">OPT-Rx-FIB</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 2350.00007, 690.000021)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#0369a1">
+      <path d="M4 12h16 M12 6v12 M18 6L6 18 M15 15l3 3 M18 15v3h-3"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">光衰减器</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">OPT-Rx-VOA</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 2350.00007, 829.145716)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)" stroke="#0369a1" stroke-width="3"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#eab308">
+      <circle cx="12" cy="12" r="5"/>
+      <path d="M12 2v3 M12 19v3 M2 12h3 M19 12h3 M4.9 4.9l2.1 2.1 M17 17l2.1 2.1 M4.9 19.1l2.1-2.1 M17 7l2.1-2.1"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">标准稳态光源</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">OPT-Rx-SRC</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 2149.473209, 826.424829)">
+    <rect class="node" width="128.608" height="90" rx="8" filter="url(#shadow)" style="" x="15.272"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#6d28d9">
+      <rect x="2" y="5" width="20" height="14" rx="2"/>
+      <path d="M6 12c1.5-3 2.5-3 4 0s2.5 3 4 0s2.5-3 4 0"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">锁相放大器</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">OPT-Rx-LIA</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 1502.000045, 1090.000032)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)" stroke="#6d28d9" stroke-width="3"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#6d28d9">
+      <path d="M12 20V4 M12 4l-3 3 M12 4l3 3 M4 12h16 M20 12l-3-3 M20 12l-3 3 M6 18l12-12 M18 6l-3 0 M18 6l0 3"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">精密运动平台轴</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">MOT-AXIS</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 1802.000054, 1090.000032)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#9333ea">
+      <path d="M3 16h4v-8h10v8h4"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">运控位置触发IO</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">MOT-TRIG</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 2102.000063, 1090.000032)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)" stroke="#ea580c" stroke-width="3"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#ea580c">
+      <path d="M2 16h5v-4h5v-4h5V4h5"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">高速锁存ADC采集</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">ELEC-Tx-ADC</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 2402.000072, 1090.000032)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#334155">
+      <rect x="2" y="4" width="20" height="12" rx="2"/>
+      <path d="M8 20h8 M12 16v4 M6 20h12"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">PC 上位机</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">ELEC-Tx-PC</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 480.000014, 1051.334016)">
+    <rect width="753.599" height="148.666" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)" style=""/>
+    <text x="30" y="35" class="legend-title" style="white-space: pre;">流动图例体系 (Legend)</text>
+    <path d="M 30 70 L 90 70" class="path-opt" marker-end="url(#arrow-opt)"/>
+    <text x="110" y="75" class="legend-text" font-weight="bold" style="white-space: pre;">核心光路 (Optical Flow)</text>
+    <path d="M 429.327 70 L 489.327 70" class="path-pwr" marker-end="url(#arrow-pwr)"/>
+    <text x="520.357" y="75" class="legend-text" font-weight="bold" style="white-space: pre; font-size: 13px;">直流供电回路 (DC Power)</text>
+    <path d="M 28.112 113.423 L 88.112 113.423" class="path-sig" marker-end="url(#arrow-sig)"/>
+    <text x="108.506" y="120.271" class="legend-text" font-weight="bold" style="white-space: pre; font-size: 13px;">电信号/数据链路/I2C (Signal &amp; Data)</text>
+    <path d="M 432.381 119.21 L 492.381 119.21" class="path-trig" marker-end="url(#arrow-trig)"/>
+    <text x="520.866" y="124.21" class="legend-text" font-weight="bold" style="white-space: pre; font-size: 13px;">位置同步触发脉冲 (Sync Trigger)</text>
+  </g>
+</svg>
