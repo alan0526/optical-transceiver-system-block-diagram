@@ -31,6 +31,7 @@
 | 编号 | 名称 | 说明 |
 |------|------|------|
 | DUT-R-MPO | **Rx MPO接口** | 接收端光输入连接器，光路入口 |
+| DUT-R-FL | **Rx Fiber Lens** | 将光纤中的光聚焦到光电探测器，AA操作对象 |
 | DUT-R-PD | **PD** | 光电探测器，将光信号转为电流 |
 | DUT-R-TIA | **TIA** | 跨阻放大器，将PD电流转为电压，输出至DSP |
 
@@ -118,7 +119,7 @@
 | 前缀 | 含义 | 范围 |
 |------|------|------|
 | DUT-T-xx | 光模块TOSA | LD、MPD、TEC、Laser Lens(LL)、Isolator(ISO)、Fiber Lens(FL)、Tx MPO |
-| DUT-R-xx | 光模块ROSA | Rx MPO、PD、TIA |
+| DUT-R-xx | 光模块ROSA | Rx MPO、Lens、PD、TIA |
 | DUT-C-xx | 光模块公用 | DSP、电气接口(ELEC) |
 | OPT-Tx-xx | Tx端光路 | Tx测量光纤(FIB)、光功率计(OPM)、90度转镜(MIR)、波前传感器(WFS) |
 | OPT-Rx-xx | Rx端光路 | 标准光源(SRC)、Rx输入光纤(FIB)、光衰减器(VOA)、锁相放大器(LIA) |

@@ -113,12 +113,12 @@
   <rect x="480.848" y="863.575" width="520" height="160" rx="16" fill="#fef2f2" stroke="#fca5a5" stroke-width="2" stroke-dasharray="8,6"/>
   <text x="510" y="894" class="box-title" fill="#b91c1c" style="white-space: pre; font-size: 18px;">三、供电与外部通信 (ELEC-DUT)</text>
   <rect x="2126.77" y="192.54" width="436.729" height="134.242" rx="16" fill="#ecfeff" stroke="#67e8f9" stroke-width="2" stroke-dasharray="8,6" style=""/>
-  <text x="2138.1" y="217.933" class="box-title" fill="#0369a1" style="white-space: pre; font-size: 18px;">二、Tx 波前检测仪器（候选方案）</text>
+  <text class="box-title" style="white-space: pre; font-size: 18px;" y="217.933" x="2138.1" fill="#0369a1">二、Tx 波前检测仪器（候选方案）</text>
   <rect x="2128.83" y="340" width="434.669" height="160" rx="16" fill="#ecfeff" stroke="#67e8f9" stroke-width="2" stroke-dasharray="8,6" style=""/>
   <text x="2146.85" y="380" class="box-title" fill="#0369a1" style="white-space: pre; font-size: 18px;">二、Tx 功率采集光路</text>
   <rect x="2131" y="640" width="432.499" height="300" rx="16" fill="#ecfeff" stroke="#67e8f9" stroke-width="2" stroke-dasharray="8,6" style=""/>
   <text x="2146.85" y="680" class="box-title" fill="#0369a1" style="white-space: pre; font-size: 18px;">二、Rx 端输入光路 (OPT-Rx)</text>
-  <rect x="1411.94" y="1040" width="1150" height="160" rx="16" fill="#faf5ff" stroke="#d8b4fe" stroke-width="2" stroke-dasharray="8,6"/>
+  <rect x="1484.4" y="1040" width="1085.67" height="160" rx="16" fill="#faf5ff" stroke="#d8b4fe" stroke-width="2" stroke-dasharray="8,6" style=""/>
   <text x="1492" y="1080" class="box-title" fill="#6d28d9" style="white-space: pre; font-size: 18px;">四、运控系统与高速采集 (MOT &amp; ELEC-Tx)</text>
   <path class="path-pwr" marker-end="url(#arrow-pwr)" d="M 590 900 L 590 845"/>
   <path class="path-pwr" marker-end="url(#arrow-pwr)" d="M 590 755 L 590 580"/>
@@ -127,7 +127,7 @@
   <path class="path-sig" marker-end="url(#arrow-sig)" d="M 830 630 L 830 606.755 L 1023.08 606.755" style=""/>
   <path class="path-sig" marker-end="url(#arrow-sig)" d="M 830 607.486 L 669.152 609.486 L 670 569"/>
   <path class="path-sig" marker-end="url(#arrow-sig)" d="M 630 490 L 630 435 L 850 435"/>
-  <path class="path-sig" marker-end="url(#arrow-sig)" d="M 1430.603 684.093 L 1430.615 536.463 L 1272.804 538.303 L 714.245 540" style=""/>
+  <path class="path-sig" marker-end="url(#arrow-sig)" d="M 1244.8 684.093 L 1244.81 544.099 L 1127.92 545.844 L 714.245 547.453" style=""/>
   <path class="path-sig" marker-end="url(#arrow-sig)" d="M 2294.8 873.747 L 2348.26 872.269" style=""/>
   <path class="path-sig" marker-end="url(#arrow-sig)" d="M 2356.12 426.516 L 2585.1 426.516 L 2585.1 1212.73 L 2182.84 1212.73 L 2182.84 1192.17" style=""/>
   <path class="path-sig" marker-end="url(#arrow-sig)" d="M 2262 1135 L 2402 1135"/>
@@ -143,8 +143,8 @@
   <path class="path-opt" marker-end="url(#arrow-opt)" d="M 2431.007 830.329 L 2431.09 781.968" style=""/>
   <path class="path-opt" marker-end="url(#arrow-opt)" d="M 2350 735 L 2260 735"/>
   <path class="path-opt" marker-end="url(#arrow-opt)" d="M 2100 735 L 2010 735"/>
-  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 1850 735 L 1760 735"/>
-  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 1600 735 L 1510 735"/>
+  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 1850 735 L 1783.76 735" style=""/>
+  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 1392.13 735 L 1329.28 735" style=""/>
   <path class="path-trig" marker-end="url(#arrow-trig)" d="M 1662 1135 L 1802 1135"/>
   <path class="path-trig" marker-end="url(#arrow-trig)" d="M 1962 1135 L 2102 1135"/>
   <g transform="matrix(1, 0, 0, 1, 510.000015, 909.000027)">
@@ -268,7 +268,7 @@
     <text x="80" y="58" class="node-cn" style="white-space: pre;">Rx MPO输入接口</text>
     <text x="80" y="76" class="node-en" style="white-space: pre;">DUT-R-MPO</text>
   </g>
-  <g transform="translate(1600, 690)">
+  <g transform="matrix(1, 0, 0, 1, 1392.793254, 690.000021)">
     <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)"/>
     <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#0284c7">
       <path d="M10 12l8-5v10z M18 5v14 M2 4l4 4 M2 8l4 4 M2 4v4 M2 4h4"/>
@@ -276,7 +276,7 @@
     <text x="80" y="58" class="node-cn" style="white-space: pre;">光电探测器</text>
     <text x="80" y="76" class="node-en" style="white-space: pre;">DUT-R-PD</text>
   </g>
-  <g transform="translate(1350, 690)">
+  <g transform="matrix(1, 0, 0, 1, 1164.189732, 690.000021)">
     <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)"/>
     <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#15803d">
       <path d="M4 4v16l16-8z"/>
@@ -333,7 +333,7 @@
     <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#0369a1">
       <path d="M4 12h16 M12 6v12 M18 6L6 18 M15 15l3 3 M18 15v3h-3"/>
     </g>
-    <text x="80" y="58" class="node-cn" style="white-space: pre;">光衰减器</text>
+    <text class="node-cn" style="white-space: pre;" x="80" y="58">光衰减器（可选）</text>
     <text x="80" y="76" class="node-en" style="white-space: pre;">OPT-Rx-VOA</text>
   </g>
   <g transform="matrix(1, 0, 0, 1, 2350.00007, 829.145716)">
@@ -345,13 +345,13 @@
     <text x="80" y="58" class="node-cn" style="white-space: pre;">标准稳态光源</text>
     <text x="80" y="76" class="node-en" style="white-space: pre;">OPT-Rx-SRC</text>
   </g>
-  <g transform="matrix(1, 0, 0, 1, 2149.473209, 826.424829)">
+  <g transform="matrix(1.128738, 0, 0, 1, 2130.950503, 826.424829)" style="">
     <rect class="node" width="128.608" height="90" rx="8" filter="url(#shadow)" style="" x="15.272"/>
     <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#6d28d9">
       <rect x="2" y="5" width="20" height="14" rx="2"/>
       <path d="M6 12c1.5-3 2.5-3 4 0s2.5 3 4 0s2.5-3 4 0"/>
     </g>
-    <text x="80" y="58" class="node-cn" style="white-space: pre;">锁相放大器</text>
+    <text class="node-cn" style="white-space: pre;" x="80" y="58">锁相放大器（可选）</text>
     <text x="80" y="76" class="node-en" style="white-space: pre;">OPT-Rx-LIA</text>
   </g>
   <g transform="matrix(1, 0, 0, 1, 1502.000045, 1090.000032)">
@@ -399,4 +399,15 @@
     <path d="M 432.381 119.21 L 492.381 119.21" class="path-trig" marker-end="url(#arrow-trig)"/>
     <text x="520.866" y="124.21" class="legend-text" font-weight="bold" style="white-space: pre; font-size: 13px;">位置同步触发脉冲 (Sync Trigger)</text>
   </g>
+  <g transform="matrix(1, 0, 0, 1, 1621.396777, 689.333028)">
+    <rect class="node" width="160" height="90" rx="8" filter="url(#shadow)" stroke="#0284c7" stroke-width="3"/>
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 68, 12)" color="#0284c7">
+      <path d="M12 2c3 4 3 16 0 20-3-4-3-16 0-20z"/>
+      <path d="M2 12h20" stroke-dasharray="2 3"/>
+    </g>
+    <text x="80" y="58" class="node-cn" style="white-space: pre;">Fiber Lens (AA对象)</text>
+    <text x="80" y="76" class="node-en" style="white-space: pre;">DUT-R-FL</text>
+  </g>
+  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 1615.28 735 L 1554.97 735" style=""/>
+  <path class="path-opt" marker-end="url(#arrow-opt)" d="M 1619.52 735 L 1557.52 735" style=""/>
 </svg>
