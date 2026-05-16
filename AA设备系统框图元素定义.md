@@ -125,4 +125,5 @@
 | OPT-Rx-xx | Rx端光路 | 标准光源(SRC)、Rx输入光纤(FIB)、光衰减器(VOA)、锁相放大器(LIA) |
 | ELEC-Tx-xx | Tx电子链路 | OPM模拟输出(OPM)、ADC采样模块(ADC)、PC数据采集(PC) |
 | ELEC-DUT-xx | DUT电气链路 | 程控电源(PSU)、供电线缆(CBL)、顶针触点(PIN)、通信(COM) |
+| FIX-TEC | 治具热电制冷器 | 光模块治具的制冷器 |
 | MOT-xx | 运控系统 | 运控轴(AXIS)、位置触发IO(TRIG)、触发信号线缆(TCBL) |
